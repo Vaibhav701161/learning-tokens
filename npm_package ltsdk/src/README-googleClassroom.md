@@ -4,22 +4,6 @@ This project is a small Node.js server that wraps the *Google Classroom API* and
 
 ---
 
-## Folder structure
-
-```
-.env.example
-.gitignore
-package-lock.json
-package.json
-server.js        # main Express server (your app.js)
-test.js          # test / helper scripts
-```
-
-> *Note:* your server file is `server.js` (not TypeScript). The README and commands below assume that file name.
-
-
----
-
 ## Environment variables
 
 Create a `.env` file (or copy `.env.example`) and fill these values:
@@ -48,13 +32,13 @@ npm install
 2. Start the server:
 
 ```sh
-node server.js
+node googleClassroom.js
 ```
 
 3. (Optional) Development with auto-restart (if you add `nodemon`):
 
 ```sh
-npx nodemon server.js
+npx nodemon googleClassroom.js
 ```
 
 After starting, open `http://localhost:3000` to see the root documentation JSON.
