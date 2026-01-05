@@ -1,6 +1,36 @@
-./node_modules
+# Node deps
 node_modules/
-./package-lock.json/
-package-lock.json/
 
+# Lockfiles
+package-lock.json
+
+# Environment files
 .env
+.env.local
+.env.development
+.env.production
+!.env.example
+!env.example
+
+# Build outputs
+dist/
+build/
+# Compiled TypeScript in root and src (but allow frontend/*.js)
+/*.js
+/*.js.map
+/*.d.ts
+/src/**/*.js
+/src/**/*.js.map
+/src/**/*.d.ts
+/tests/**/*.js
+/tests/**/*.d.ts
+
+# NPM package tarballs
+*.tgz
+
+# Editor metadata
+.vscode/
+.idea/
+
+# OS files
+.DS_Store
